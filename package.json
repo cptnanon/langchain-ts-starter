@@ -11,6 +11,7 @@
     "tsup": "tsup",
     "build": "tsup",
     "start": "tsx -r dotenv/config src/index.ts",
+    "upload": "tsx -r dotenv/config src/embedding.ts",
     "lint": "eslint src",
     "lint:fix": "npm run lint --fix",
     "format": "prettier --write \"**/*.ts\"",
@@ -27,14 +28,21 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@langchain/community": "^0.2.9",
+    "@langchain/openai": "^0.1.2",
+    "@supabase/supabase-js": "^2.43.5",
+    "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.0.3",
-    "langchain": "^0.0.39",
-    "tsup": "^6.7.0"
+    "langchain": "^0.2.5",
+    "readline-sync": "^1.4.10",
+    "tsup": "^6.7.0",
+    "wrap-ansi": "^9.0.0"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.2",
     "@types/js-yaml": "^4",
     "@types/node": "^18.15.5",
+    "@types/readline-sync": "^1.4.8",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint": "^8.33.0",
