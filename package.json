@@ -1,5 +1,5 @@
 {
-  "name": "langchain-ts-starter",
+  "name": "Lens Embeddings",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -28,6 +28,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@google-cloud/bigquery": "^7.9.0",
     "@langchain/community": "^0.2.9",
     "@langchain/openai": "^0.1.2",
     "@supabase/supabase-js": "^2.43.5",
